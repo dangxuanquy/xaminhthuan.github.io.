@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sách Mới - Thư viện Online</title>
+
+  <!-- CSS tối giản, đồng bộ với thuvienonline.css -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    header {
+      background-color: #e65802;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 50px;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      background: #333;
+    }
+
+    .menu li a {
+      display: block;
+      padding: 14px 20px;
+      color: white;
+      text-decoration: none;
+    }
+    .menu a.active,
+    .menu a:hover {
+      background: #ff7802;
+    }
+
+    .banner {
+      background: linear-gradient(90deg, #e65802, #ff7802);
+      color: white;
+      text-align: center;
+      padding: 50px 15px;
+      margin: 15px;
+      border-radius: 10px;
+    }
+
+    .books {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .book-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .book {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+    .book:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    }
+
+    .book img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #e65802;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: #ff7802;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="thuvienonline.html">
+        <img src="https://png.pngtree.com/png-vector/20250211/ourmid/pngtree-colorful-book-stack-logo-design-perfect-for-education-or-library-projects-vector-png-image_15444285.png" alt="Logo Thư viện Online">
+      </a>
+      <h1>Thư viện Online</h1>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="thuvienonline.html">Trang chủ</a></li>
+      <li><a href="sachmoi.html" class="active">Sách mới</a></li>
+      <li><a href="tracuu.html">Tra cứu</a></li>
+      <li><a href="#">Hỗ trợ</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <section class="banner">
+    <h2>Danh mục Sách Mới</h2>
+    <p>Cập nhật những đầu sách mới nhất</p>
+  </section>
+
+  <main>
+    <section class="books">
+      <div class="book-list">
+        <div class="book">
+          <img src="https://dilib.vn/img/news/2025/03/larger/6048-ai-50-nhanh-hon-de-hon-re-hon-chinh-xac-hon-1.jpg?v=8767">
+          <h3>AI 5.0 - NHANH HƠN, DỄ HƠN, RẼ HƠN, CHÍNH XÁC HƠN</h3>
+          <p>Tác giả: Ajay Agrawal</p>
+          <p>Thể loại: Công nghệ thông tin</p>
+          <a class="btn" href="sach1.html">Xem chi tiết</a>
+        </div>
+
+        <div class="book">
+          <img src="https://dilib.vn/img/news/2025/03/larger/6060-gian-nan-dung-voi-nan-1.jpg?v=1415">
+          <h3>GIAN NAN ĐỪNG VỘI NẢN</h3>
+          <p>Tác giả: Tuệ Tâm</p>
+          <p>Thể loại: Tâm lý - Kỹ năng</p>
+          <a class="btn" href="#">Xem chi tiết</a>
+        </div>
+
+        <div class="book">
+          <img src="https://dilib.vn/img/news/2025/03/larger/6050-chatgpt-ung-dung-tri-tue-nhan-tao-trong-cong-viec-1.jpg?v=8225">
+          <h3>CHATGPT - ỨNG DỤNG TRÍ TUỆ NHÂN TẠO</h3>
+          <p>Tác giả: Ajay Agrawal</p>
+          <p>Thể loại: Công nghệ thông tin</p>
+          <a class="btn" href="#">Xem chi tiết</a>
+        </div>
+
+        <div class="book">
+          <img src="https://dilib.vn/img/news/2024/05/larger/15581-thoi-dai-thu-tu-1.jpg?v=3154">
+          <h3>THỜI ĐẠI THỨ TƯ</h3>
+          <p>Tác giả: Byron Reese</p>
+          <p>Thể loại: Khoa học - Công nghệ</p>
+          <a class="btn" href="#">Xem chi tiết</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Thư viện Online - Thiết kế bởi Xa Minh Thuận | Hotline: 0339268901
+  </footer>
+</body>
+</html>
